@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cdv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop" />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/cdv_icon"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="app名字"
+        android:textColor="#444444"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_pgk_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_app_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5px"
+        android:layout_toRightOf="@+id/cdv_icon"
+        android:text="com.xxx.xxx"
+        android:textColor="#924"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_app_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5px"
+        android:layout_toRightOf="@+id/tv_pgk_name"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="v1.0.0"
+        android:textColor="#cc4981"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_sha1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pgk_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5px"
+        android:layout_toRightOf="@+id/cdv_icon"
+        android:text="SHA1:xxxxxx"
+        android:textColor="#676767"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_app_sys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_app_name"
+        android:text="系统"
+        android:textColor="#349999"
+        android:textSize="12sp" />
+</RelativeLayout>
